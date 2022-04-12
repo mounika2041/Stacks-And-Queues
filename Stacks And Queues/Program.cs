@@ -16,6 +16,8 @@ namespace Stacks_And_Queues
             Queue.Enqueue(30);
             Queue.Enqueue(70);
             Queue.Display();
+            Queue.Dequeue();
+            Queue.Display();
             Console.ReadLine();
         }
     }

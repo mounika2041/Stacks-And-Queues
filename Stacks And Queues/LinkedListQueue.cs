@@ -46,5 +46,16 @@ namespace Stacks_And_Queues
                 temp = temp.next;
             }
         }
+        public void Dequeue()
+        {
+            if(this.top==null)
+            {
+                Console.WriteLine(" The queue is empty");
+                return;
+            }
+            int deletedNode = this.top.data;
+            this.top = this.top.next;
+            Console.WriteLine("{0} is deleted from Queue", deletedNode);
+        }
     }
 }
