@@ -11,15 +11,11 @@ namespace Stacks_And_Queues
         static void Main(string[] args)
         {
             Console.WriteLine("welcome to stacks and Queues");
-            LinkedListStack stack = new LinkedListStack();
-            stack.Push(70);
-            stack.Push(30);
-            stack.Push(56);
-            stack.Display();
-            stack.peek();
-            stack.pop();
-            stack.IsEmpty();
-            stack.Display();
+            LinkedListQueue Queue = new LinkedListQueue();
+            Queue.Enqueue(56);
+            Queue.Enqueue(30);
+            Queue.Enqueue(70);
+            Queue.Display();
             Console.ReadLine();
         }
     }
